@@ -16,7 +16,7 @@ public class ProductController {
     private IProductService productService;
 
 
-    @RequestMapping(path = "/product")
+    @RequestMapping(path = "/products")
     ResponseEntity<Product> getProduct() {
         List<Product> products = productService.findAll();
 
